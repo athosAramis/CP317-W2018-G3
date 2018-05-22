@@ -1,33 +1,36 @@
 # Subby
+
 ---
 ## Requirements Document
 Version 1.0 – 5/20/18
- 1. **[Introduction](#1_Introduction_29)**
-     1.1. [Purpose](#11_Purpose_33) 
-     1.2. [Scope](#12_Scope_36)
-     1.3. [Document Lexicon](#13_Document_Lexicon_39)
-    &nbsp;&nbsp;&nbsp;&nbsp; 1.3.1. [Definitions](#131_Definitions_42)
-    &nbsp;&nbsp;&nbsp;&nbsp; 1.3.2. [Acronyms and Abbreviations ](#132_Acronyms_and_Abbreviations_46)
-     1.4. [References](#14_References_49)
-     1.5. [Overview](#15_Overview_52)
- 2. **[Overall Description](#2_Overall_Description_55)**
-     2.1. [Product Perspective](#21_Product_Perspective_88)
-     &nbsp;&nbsp;&nbsp;&nbsp;  2.1.1. [Front-End Users](#211_FrontEnd_Users_95)
-     &nbsp;&nbsp;&nbsp;&nbsp;  2.1.2. [Back-End Users](#212_BackEnd_Users_112)
-     &nbsp;&nbsp;&nbsp;&nbsp;  2.1.3. [Other Features](#213_Other_Features_120)
-     &nbsp;&nbsp;&nbsp;&nbsp;  2.1.4. [Sample GUI](#214_Sample_GUI_133)
-     2.2. [Product Functions](#22_Product_Functions_154)
-     2.3. [User Characteristics](#23_User_Characteristics_157)
-     2.4. [Constraints](#24_Constraints_160)
-     2.5. [Assumptions and Dependencies](#25_Assumptions_and_Dependancies_163)
-3. **[Specific Requirements](#3_Specific_Requirements_166)**
-     3.1. [External Interfaces](#31_External_Interfaces_168)
-     3.2. [Functions](#32_Functions_197)
-     3.3. [Logical Database Requirements](#33_Logical_Database_Requirements_204)
-     3.4. [Portability](#34_Portability_213)
-4. **[Revision History](#40_Revision_History_216)**
+ 1. **[Introduction](#1_Introduction_29)**  
+     1.1. [Purpose](#11_Purpose_33)  
+     1.2. [Scope](#12_Scope_36)  
+     1.3. [Document Lexicon](#13_Document_Lexicon_39)  
+        1.3.1. [Definitions](#131_Definitions_42)  
+        1.3.2. [Acronyms and Abbreviations ](#132_Acronyms_and_Abbreviations_46)  
+     1.4. [References](#14_References_49)  
+     1.5. [Overview](#15_Overview_52)  
+ 2. **[Overall Description](#2_Overall_Description_55)**  
+     2.1. [Product Perspective](#21_Product_Perspective_88)  
+         2.1.1. [Front-End Users](#211_FrontEnd_Users_95)  
+         2.1.2. [Back-End Users](#212_BackEnd_Users_112)  
+         2.1.3. [Other Features](#213_Other_Features_120)  
+         2.1.4. [Sample GUI](#214_Sample_GUI_133)  
+     2.2. [Product Functions](#22_Product_Functions_154)  
+     2.3. [User Characteristics](#23_User_Characteristics_157)  
+     2.4. [Constraints](#24_Constraints_160)  
+     2.5. [Assumptions and Dependencies](#25_Assumptions_and_Dependancies_163)  
+3. **[Specific Requirements](#3_Specific_Requirements_166)**  
+     3.1. [External Interfaces](#31_External_Interfaces_168)  
+     3.2. [Functions](#32_Functions_197)  
+     3.3. [Logical Database Requirements](#33_Logical_Database_Requirements_204)  
+     3.4. [Portability](#34_Portability_213)  
+4. **[Revision History](#40_Revision_History_216)**  
+
 
 # 1. Introduction
+
 ---
 Subby is a website designed to help individuals find sublets within the Waterloo region. In addition, it is also designed to help individuals sublet their places in a standardized manner. The point of Subby is to make subletting easier for the Waterloo community.  
 
@@ -40,12 +43,13 @@ Subby will be a website used mainly by students looking to sublet a place in Wat
 ### 1.3. Document Lexicon
 Here, we define specific definitions, acronyms and abbreviations used throughout our project.
 
-###### 1.3.1. Definitions
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Sublet:** The action of leasing a property to someone else.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Sublet Seeker:** The person looking to sublet a place.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Lease Owner:** The person looking to rent their place to someone else.
-###### 1.3.2. Acronyms and Abbreviations
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**API - Application Programming Interface:** Tools for building application software.
+#### 1.3.1. Definitions
+* **Sublet:** The action of leasing a property to someone else.
+* **Sublet Seeker:** The person looking to sublet a place.
+* **Lease Owner:** The person looking to rent their place to someone else.
+
+#### 1.3.2. Acronyms and Abbreviations
+* **API - Application Programming Interface:** Tools for building application software.
 
 ### 1.4. References
 Based on IEEE Std 830-1998.
@@ -54,6 +58,7 @@ Based on IEEE Std 830-1998.
 The remaining elements of this document highlights the functions and appearance of the Subby website. 
 
 # 2. Overall Description
+
 ---
 **Renting with Subby:**
 Those students seeking to sublet a residence can use the rental database at any time without charge and without
@@ -90,10 +95,11 @@ Here, we will describe how Subby works as a whole to make subletting easier for 
 
 Subby is a website that will utilize Google Maps API to help individuals locate and post sublets in the Waterloo area. 
 
-##### Actors and Use Cases
+#### Actors and Use Cases
+
 ![Use Case Chart](https://i.imgur.com/I7MsGHd.png)
 
-##### 2.1.1. Front-End Users
+#### 2.1.1. Front-End Users
 Subby will have a rather simplistic design to make it easier for front-end users to use. The homepage will consist of a search bar in the middle, where students can search for sublets, along with a sign-in link and a register link located at the top of the page. Since the website is targeted for students, individuals will have to register using a school email address. By doing so, the amount of fake accounts will decrease resulting in less spam and it will be easier to set the location of the account to a certain university. 
 
 There will be 2 types of front-end users: 
@@ -110,7 +116,7 @@ There will be 2 types of front-end users:
     * They could also choose to register and post a “WANTED” advertisement if they do not see anything that meets their requirements
     * Will have a “FAVOURITE” and “SHARE” function – if users find a room they like, they could add them to a list of potential sublets they’re interested in or share it with a friend who might be interested in it as well
     
-##### 2.1.2. Back-End Users
+#### 2.1.2. Back-End Users
 The back-end users will be the administrators of the website looking to maintain the integrity of the site. 
 
 Here are the main features available for back-end users: 
@@ -118,7 +124,7 @@ Here are the main features available for back-end users:
 * **Regulate Rules:** Give appropriate punishments to individuals who violate the rules (i.e. spamming, scammers, etc). Punishments could include giving them warnings and banning their accounts.  
 * **Provide Great Customer Service:** Individuals will be able to contact a Subby administrator by email if any problems or questions arise. 
 
-##### 2.1.3. Other Features
+#### 2.1.3. Other Features
 * **Review**
     * Both sublet seekers and leaser owners can rate each other depending on their experience on a scale of 1 – 5. For instance, the sublet seeker can rate their experience with the lease owner and the lease owner can rate their experience with the sublet seeker. This will allow individuals to trust others more freely if they have good reviews. 
 
@@ -131,24 +137,39 @@ Here are the main features available for back-end users:
 * **Tinder Swipe**
     * Users could swipe “left” or “right” on apartments to make the search easier.
     
-##### 2.1.4. Sample GUI
+#### 2.1.4. Sample GUI
 **Sign-up Page:**
+
 ![Sign-up](https://i.imgur.com/b67oMKF.png)
+
 **Home Page:**
+
 ![Home](https://i.imgur.com/QP1qiJJ.png)
 ![Home2](https://i.imgur.com/mwkfruO.jpg)
+
 **Sign-up Overlay:**
+
 ![Sign-up Overlay](https://i.imgur.com/Zyjz1fQ.jpg)
+
 **Search Results Page:**
+
 ![Search Results](https://i.imgur.com/UzkJUzQ.png)
+
 **Available Listings Page:**
+
 ![Available Listings V1](https://i.imgur.com/7lLgZWh.png)
 ![Available Listings V2](https://i.imgur.com/htBFivv.png)
+
 **(Single) Listing Page:**
+
 ![Single Listing](https://i.imgur.com/sqelwXj.png)
+
 **User "My Listings" Page:**
+
 ![User "My Listings"](https://i.imgur.com/nFediUb.png)
+
 **User "My Account" Page:**
+
 ![User "My Account" V1](https://i.imgur.com/PHhniXn.png)
 ![User "My Account" V2](https://i.imgur.com/lmDIJEc.png)
 
@@ -165,9 +186,11 @@ In terms of the auction/bidding feature, it may be difficult to identify the val
 Although anyone can visit and search the rental database, to contact a leasee or post a unit to sublet, users must first register with a valid university or college email. Individuals are expected to have access to a device with Wi-Fi and use a browser compatible with Google Maps. 
 
 # 3. Specific Requirements
+
 ---
-##### 3.1. External Interfaces
-* Unless otherwise stated all inputs listed here will be stored in the application database as appropriate for the model it represents.
+### 3.1. External Interfaces
+Unless otherwise stated all inputs listed here will be stored in the application database as appropriate for the model it represents.
+
 * **User Management**
     * The user will be allowed to change their password by providing their current password, the new password, and confirmation of the new password to ensure no typos have been made.
 The user will be able to change their email with a simple form, validated against typical email format.
@@ -185,8 +208,7 @@ The user will be able to change their email with a simple form, validated agains
     * Similar filters and distance options will be available, as with the Sublet Listings page.
     * The same limits for maximum number of listings per area will be imposed for Sublets Wanted.
 * **Listing Management**
-    * A list of an individual User’s Sublet or Sublet Wanted listings will appear on this page, with the address and various actions such as ‘edit’ or ‘delete’.
-A listing may be edited or created, and may have photos, descriptions, or attributes added to it. A maximum of 8 photos will be allowed, and descriptions limited to short text (<500 characters)
+    * A list of an individual User’s Sublet or Sublet Wanted listings will appear on this page, with the address and various actions such as ‘edit’ or ‘delete’. A listing may be edited or created, and may have photos, descriptions, or attributes added to it. A maximum of 8 photos will be allowed, and descriptions limited to short text (<500 characters)
 * **Review Submission**
     * An integer rating range of 1 to 5 is allowed to be submitted along with a short text description. The description will be sanitized for safety of the database and application.
 * **User Administration**
@@ -195,26 +217,27 @@ A listing may be edited or created, and may have photos, descriptions, or attrib
     * An administrator will be able to edit a user’s email address as well as send a password reset link. The administrator will not be allowed to directly edit a user’s password.
     * The administrator will be able to select to ‘ban’ or ‘delete’ a user.
     
-##### 3.2. Functions
+### 3.2. Functions
 * The system shall perform basic validation for all models. For example, a User cannot be created without an email address (which must also pass a simple email format validation), and a Sublet posting cannot be made without an availability date.
 * The system shall ensure that users are not creating more than their administrator-defined allowed postings for their geographic area.
 * The system shall allow administrators to ban users, removing their posts and account access but maintaining the user record to prevent later sign-ups from that address. Deleting a user performs the same task, but also removes the user record.
 * The system shall delete dependent records when a model is removed. For example, deleting a Sublet posting will remove Favorite records associated with it, and deleting a User would remove the Sublet postings created by them.
 * Deleting a Sublet posting will also delete Favorite records associated with it. A notification
 
-##### 3.3. Logical Database Requirements
+### 3.3. Logical Database Requirements
 * Several tables with many attributes will be required to maintain the data for this project. All tables will have a unique ID as the primary key for the table.
     * **Users table:** The Users table will require a distinct and unique email address, and salted/hashed passwords will also be stored. Two user types will be supported- regular clients who sign up from the web application and administrators who will have access backend functionality, which can be defined as a tinyint and treated as a boolean in the business logic of the application. Account status (such as bans or strikes against the account) will also be stored. Note that users can have zero-to-many relationships with the Sublets, Reviews, and Favorites tables.
     * **Sublets table:** Analogous to postings, the Sublets table will include address information (longitude/latitude as provided by Google’s Maps API), availability date, pricing, and so on. An individual sublet posting will be owned by a User through their distinct ID as a foreign key. As the ‘Wanted’ feature would cover many of the same attributes as a regular sublet, conditional logic or a ‘boolean’-treated field would determine whether a Sublet record is for a physically offered sublet, or a sublet-wanted ad.
     * **Reviews table:** Reviews will have foreign keys for both the owning User as well as the Sublet record it is for and the User owning that sublet, preventing it from being invalidated when a posting is removed. It will also include a text field for the review content as well as an integer column for rating.
     * **Favorites table:** The Favorites table will include foreign keys on both Users and Sublets, allowing a User to look up several Sublet records that were of interest to them at some point. This is a simple join table, and no other information should be required.
-Additional tables, such as those related to Auction/Bidding type listings may be added to support the product roadmap as features are implemented.
-* Indexes will applied to all uniquely identifying fields such as ID’s (as well as other fields of import, such as email addresses or location data) to ensure fast lookups for individual and related records.
 
-##### 3.4. Portability
+Additional tables, such as those related to Auction/Bidding type listings may be added to support the product roadmap as features are implemented. Indexes will applied to all uniquely identifying fields such as ID’s (as well as other fields of import, such as email addresses or location data) to ensure fast lookups for individual and related records.
+
+### 3.4. Portability
 We must create a functional web page that is accessible on all devices, and because of the web-based nature, we must ensure compatibility with the largest browsers: Google Chrome, FireFox, Internet Explorer, Safari. This means that there should be no issue with accessing the project Windows, Mac OS X, or Linux. There will be a mobile friendly version of the site.
 
 # 4.0. Revision History
+
 ---
 ## Version 1.0
 * **Section 1**
@@ -229,12 +252,6 @@ We must create a functional web page that is accessible on all devices, and beca
     * Alex Kirsopp [3.1-3.3] [2018-05-20 - 2018-05-21]
     * Mackenzie Dang [3.4] [2018-05-22]
 
-[//]: # (Markdown generated by Mackenzie Dang)
-
-
-
-
-
-
-
-
+* **Other**
+    * Mackenzie Dang - Markdown
+    * Alex Kirsopp - Markdown
