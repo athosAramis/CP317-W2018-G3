@@ -1,0 +1,7 @@
+# Compiled
+__pycache__/
+*.py[cod]
+*$py.class
+
+# In case we end up using this -- AK
+db.sqlite3
