@@ -35,14 +35,19 @@ Version 1.0 – 5/20/18
 Subby is a website designed to help individuals find sublets within the Waterloo region. In addition, it is also designed to help individuals sublet their places in a standardized manner. 
 The purpose of Subby is to make process of subletting easier and well for the Waterloo community.  Furthermore, the point of Subby is to ensure that both lease owners and sublet seekers are getting realstically best deals possible.
 
+/*A major issue many students face in their time at post-secondary school is the dreaded one-year lease. Most students scramble to find potential candidates to take over their lease as their semester comes to an end. This is where Subby comes into play. Subby is an easy to use website that enables students to either sublet their place or simply find a sublet of their own. The goal for Subby is to create a one stop marketplace for sublets as opposed to the current struggle of students using multiple sites. The site comes with a variety of useful features such as a localized map and search priorities that allow for a visually appealing search and a more detailed search as well.  */
+
 ### 1.1. Purpose
-This requirements document is used to highlight the features and the integration of Subby. Throughout the term, individuals on the Subby team will refer to this document and make changes as necessary.
+This document outlines Subby's fucntions and integration [interation into what?] . Throughout the term, members of the Subby team will refer to this document and make changes as necessary.
 
 ### 1.2. Scope
 Subby will be a website used mainly by students looking to sublet a place in Waterloo or by students looking to sublet their places in Waterloo. The main goal of Subby is to create a centralized website for student sublets.
 
+/*
+Subby is an online student-to-student subletting service, which connects tenants and subletters together. In contrast to other lodging services, Subby specialises in subletting exclusively between university and college students for periods of 4 or 8 months. For the time being, Subby will only facilitate subletting listings within the Kitchener-Waterloo (KW) region. In short, Subby's foremost objective is to ensure that both lease owners and sublet seekers are getting realstically best deals possible.
+*/
+
 ### 1.3. Document Lexicon
-Here, we define specific definitions, acronyms and abbreviations used throughout our project.
 
 #### 1.3.1. Definitions
 * **Sublet:** The action of leasing a property to someone else.
@@ -70,7 +75,7 @@ location), search results can be further refined by:
  * **Property Type** – single bedroom, shared bedroom, etc  
  * **Size** – number of beds/bedrooms/washrooms
  * **Distance from Campus** -- distance range from a given university campus
- * **Convenience** -- how convenient is it to reach a nearby plaza, gym, etc...
+ * **Convenience** -- how convenient is it to reach a nearby plaza, gym, etc...[is this a rating or a drop-down selection?]
  * **Availability** -- move in date
  * **Rental Period** -- users can sublet for periods of 4 or 8 months
  * **Keyword Search** -- search for features and amenities such as ‘onsite laundry’
@@ -79,32 +84,32 @@ location), search results can be further refined by:
 
 Once a sublet seeker finds a unit to their liking they must create a profile of their own using a university email
 to be able to add the property in question to their ‘Wish List.’ Otherwise, the sublet seeker may directly contact
-The lessee by sending them a message of interest through the communication form appeared on every listing
+The lessee by sending them a message of interest through the communication form available on every listing
 page.
 
 **Subleasing with Subby:**
 To promote available rental units, users must first register and create an account using a valid university email.
-Once a Subby account holder, a user can create a listing for their residence(s) under ‘My Listings’ and promote \
+Once a Subby account holder, a user can create a listing for their residence(s) under ‘My Listings’ and promote 
 said listing through a title, description, up to 20 captioned photographs and a myriad of search fields, including
 price, property type, rental period and size. 
  
-Moreover, registered users can create personalized profiles so that potential subtenants may get to know the leasee a little bit better. Under ‘My Profile’, a user can upload a photo, include their name, contact information, and profile description.
+Moreover, registered users can create personalized profiles so that potential subtenants may get to know the lessee a little bit better. Under ‘My Profile’, a user can upload a photo, include their name, contact information, and profile description.
 
 Here, we will describe how Subby works as a whole to make subletting easier for students. 
 
 ### 2.1. Product Perspective
 
-Subby is a website that will utilize Google Maps API to help individuals locate and post sublets in the Waterloo area. 
+The Subby website will utilize Google Maps API to help individuals locate and post sublets in the Waterloo area. 
 
 #### Actors and Use Cases
 
 ![Use Case Chart](https://i.imgur.com/I7MsGHd.png)
 
 #### 2.1.1. Front-End Users
-Subby will have a rather simplistic design to make it easier for front-end users to use. The homepage will consist of a search bar in the middle, where students can search for sublets, along with a sign-in link and a register link located at the top of the page. Since the website is targeted for students, individuals will have to register using a school email address. By doing so, the amount of fake accounts will decrease resulting in less spam and it will be easier to set the location of the account to a certain university. 
+Subby will have a clean and rather simplistic design to streamline the site for front-end users of all technology literacy backgrounds. The homepage will consist of a search bar in the center of the page, where students can search for sublets. Additionally, the homepage will include a sign-in link and a register link located at the top of the page. Since the website is targeted for students, individuals will have to register using a university or college email address. By doing so, the amount of fake accounts will be reduced, resulting in less spam and it will be easier to set the location of the account to a certain school [why is does the account need to 'set' to a certain university?]. 
 
-There will be 2 types of front-end users: 
-1. **Lease Owner – the individual looking to sublet their place**
+There will be two types of front-end users: 
+1. **Lease Owner – the individual looking to sublet their residence**
     * These individuals must register to post
     * After registration, they may post details about the property they are subletting (i.e. pictures, brief description of their place, price, location) 
     * They can edit their post any time (i.e. lower the price, mark as sold, delete the listing)
@@ -196,10 +201,10 @@ Although anyone can visit and search the rental database, to contact a leasee or
 
 ---
 ### 3.1. External Interfaces
-Unless otherwise stated all inputs listed here will be stored in the application database as appropriate for the model it represents.
+Unless otherwise stated, all inputs listed here will be stored in the application database as appropriate for the model it represents.
 
 * **User Management**
-    * The user will be allowed to change their password by providing their current password, the new password, and confirmation of the new password to ensure no typos have been made.
+    * The user will be allowed to change their password by providing their current password, then the new password, and finally confirming the new password as to ensure validity.
 The user will be able to change their email with a simple form, validated against typical email format.
     * All changes to user account information will have to be confirmed through email to ensure account security.
     * The user will be able to enter their own address for the application to more accurately determine which Sublet records may be relevant to them.
