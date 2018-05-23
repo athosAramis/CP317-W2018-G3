@@ -32,7 +32,8 @@ Version 1.0 – 5/20/18
 # 1. Introduction
 
 ---
-Subby is a website designed to help individuals find sublets within the Waterloo region. In addition, it is also designed to help individuals sublet their places in a standardized manner. The point of Subby is to make subletting easier for the Waterloo community.  
+Subby is a website designed to help individuals find sublets within the Waterloo region. In addition, it is also designed to help individuals sublet their places in a standardized manner. 
+The purpose of Subby is to make process of subletting easier and well for the Waterloo community.  Furthermore, the point of Subby is to ensure that both lease owners and sublet seekers are getting realstically best deals possible.
 
 ### 1.1. Purpose
 This requirements document is used to highlight the features and the integration of Subby. Throughout the term, individuals on the Subby team will refer to this document and make changes as necessary.
@@ -74,10 +75,10 @@ location), search results can be further refined by:
  * **Rental Period** -- users can sublet for periods of 4 or 8 months
  * **Keyword Search** -- search for features and amenities such as ‘onsite laundry’
  * **Number of Roommates** -- the number of roommates expected to occupy residence during stay
- * **Leasee Rating** -- the star-point rating of the lease owner from a scale of 0 to 5 stars
+ * **Leasee Rating** -- the star-point rating of the lease owner and the unit from a scale of 0 to 5 stars
 
 Once a sublet seeker finds a unit to their liking they must create a profile of their own using a university email
-to be able to add the property in question to their ‘Wish List.’ Otherwise, the sublet seeker may  directly contact
+to be able to add the property in question to their ‘Wish List.’ Otherwise, the sublet seeker may directly contact
 The lessee by sending them a message of interest through the communication form appeared on every listing
 page.
 
@@ -126,13 +127,19 @@ Here are the main features available for back-end users:
 
 #### 2.1.3. Other Features
 * **Review**
-    * Both sublet seekers and leaser owners can rate each other depending on their experience on a scale of 1 – 5. For instance, the sublet seeker can rate their experience with the lease owner and the lease owner can rate their experience with the sublet seeker. This will allow individuals to trust others more freely if they have good reviews. 
+    * Both sublet seekers and leaser owners can rate each other, as well as the unit, depending on their experience on a scale of 1 – 5. For instance, the sublet seeker can rate their experience with the lease owner and the lease owner can rate their experience with the sublet seeker. This will allow individuals to trust others more freely if they have good reviews. 
 
 * **Ads**
     * Potentially have school-related ads on the website to generate revenue. 
 
 * **Auction/Bidding Feature**
-    * Allow the lease owners to either declare a firm price or allow sublet seekers to bid on their property.
+    * There will be an option that allows lease owners to set their own price for the rent. They then will have two options - the first is to accept rent applications at listed price, or take the bid they think is the best based on competitive pricing. 
+
+* **Competitive Pricing**
+    * On the page that shows buildings, there will be two boxes that show the competitive pricing. One box will show the lowest renting price set up by lease owners of rooms (same type) in same building, or by leasers of same criteria. The other box will show the highest bidding set by sublet seekers for either rooms (same type) in same building or rooms that fulfil same criteria. The purpose of this feature is to show the competitive pricing of each unit listed. This way, people will have better understanding of how much they should be paying for a sublet or of how much they should charge for subletting their unit.
+    
+* **Contract**
+    * There will be an option for lease owners to generate a sublet contract that can be customized to their liking. An alternative option would be to direct lease owners to another link/organization that deals with drafting contracts and allow them to make the customizations.
 
 * **Tinder Swipe**
     * Users could swipe “left” or “right” on apartments to make the search easier.
@@ -247,6 +254,7 @@ We must create a functional web page that is accessible on all devices, and beca
     * Sandra Sung [2.1 - 2.5] [2018-05-20]
     * Jingchi Chen [2.1.4] [2018-05-20]
     * Xiaochao Luo[2.1][2018-05-22]
+    * Sizhao Lin [2.1.3' [2018-05-23]
 
 * **Section 3**
     * Alex Kirsopp [3.1-3.3] [2018-05-20 - 2018-05-21]
